@@ -16,11 +16,11 @@
 
     <h2>Inserted Paragraph</h2>
     <?php
-        echo "$paragraph_length";
+        echo $paragraph_length;
     ?>
     <br>
     <h3>Length: <?php
-        echo strlen("$paragraph_length");
+        echo strlen($paragraph_length);
     ?> chars</h3>
     
 </section>
@@ -29,9 +29,9 @@
 
     <h2> We have hidden the word from the paragraph</h2>
     <?php
-        $bad_word = strtolower("$bad_word");
-        $paragraph_length = str_replace("$bad_word" , " *** ", $paragraph_length);
-        echo "$paragraph_length";
+        $bad_word = strtolower($bad_word);
+        $paragraph_length = str_replace($bad_word , " *** ", $paragraph_length);
+        echo $paragraph_length;
     ?>
 </section>
 
